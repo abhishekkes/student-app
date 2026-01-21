@@ -4,10 +4,10 @@ const auth = require("../middleware/authMiddleware");
 
 const router = express.Router();
 
-router.post("/register", register);
-router.post("/login", login);
+router.post("https://student-app-2-vwtx.onrender.com/register", register);
+router.post("https://student-app-2-vwtx.onrender.com/login", login);
 
-router.get("/dashboard", auth, (req, res) => {
+router.get("https://student-app-2-vwtx.onrender.com/dashboard", auth, (req, res) => {
   res.json({ message: "Welcome to Dashboard" });
 });
 
