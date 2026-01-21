@@ -9,9 +9,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="https://student-app-1-6z3s.onrender.com/register" element={<Register />} />
         <Route
-          path="/dashboard"
+          path="https://student-app-1-6z3s.onrender.com/dashboard"
           element={
             <ProtectedRoute>
               <Dashboard />

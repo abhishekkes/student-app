@@ -9,9 +9,9 @@ export default function Login() {
 
   const loginUser = async (e) => {
     e.preventDefault();
-    const res = await api.post("/login", { email, password });
+    const res = await api.post("https://student-app-1-6z3s.onrender.com/login", { email, password });
     localStorage.setItem("token", res.data.token);
-    navigate("/dashboard");
+    navigate("https://student-app-1-6z3s.onrender.com/dashboard");
   };
 
   return (
