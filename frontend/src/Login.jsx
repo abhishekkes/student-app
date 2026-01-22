@@ -21,9 +21,7 @@ export default function Login() {
     <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
     <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
     <button>Login</button>
-    <p>
-          New user? <Link to="/register">Create Account</Link>
-        </p>
+    <a href="/register">Create Account</a>
   </form>
 </div>
 
